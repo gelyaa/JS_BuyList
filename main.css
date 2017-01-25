@@ -4,14 +4,12 @@ body {
 * {
     font-family: monospace
 }
-
-.container{
+.container {
     width: 100%;
     margin: auto;
 }
-
 .column {
-    float:left;
+    float: left;
     border-radius: 4px;
     box-shadow: 1px 1px 10px gray;
     margin-left: 50px;
@@ -47,116 +45,94 @@ body {
     width: 100%;
     margin: auto;
 }
-
-.name{
+.name {
     margin-top: -10px;
     width: 33%;
     float: left;
     font-size: 15px;
 }
-
 .quantity {
     text-align: center;
     float: right;
     margin-top: -12px;
-    margin-right: 97px;
+    margin-right: 5px;
     width: 30px;
-    padding-left: 1px;
-    padding-right: 1px;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: whitesmoke;
 }
-
 .boughtbutton {
+    float: right;
     background-color: whitesmoke;
     border-color: whitesmoke;
     border-radius: 6px;
     box-shadow: 0px 1px 1px lightgray;
-    width: 75px;
-    height: 37px;
+    width: 85px;
     height: 37px;
     margin-top: -20px;
-    margin-right: 23px;
-    float: right;
+    margin-right: 10px;
     font-size: 12px;
 }
 .plusbutton {
     float: right;
     font-size: 20px;
     margin-top: -17px;
-    margin-left: 95px;
-    position: absolute;
-    padding-bottom: 28px;
-    text-align: center;
+    margin-right: 51px;
+    padding-bottom: 10px;
     background-color: rgb(0, 230, 0);
     border-radius: 50%;
     border-color: rgb(0, 230, 0);
     color: white;
     width: 34px;
     height: 34px;
-    font-stretch: ultra-condensed;
 }
-
 .minusbutton {
+    float: left;
     font-size: 20px;
     margin-top: -17px;
     margin-left: 12px;
-    position: absolute;
-    padding-bottom: 28px;
-    text-align: center;
+    padding-bottom: 10px;
     background-color: rgba(285, 10, 0, 0.6);
     border-radius: 50%;
     border-color: rgba(285, 10, 0, 0.1);
     color: white;
     width: 34px;
     height: 34px;
-    font-stretch: ultra-condensed;
 }
-
 .cancelbutton {
     float: right;
     margin-top: -18px;
-    margin-left: 270px;
+    margin-right: -20px;
     font-size: 20px;
-    position: absolute;
     padding-bottom: 28px;
-    text-align: center;
     background-color: rgb(285, 10, 0);
     border-radius: 6px;
     border-color: red;
     color: white;
     width: 34px;
     height: 34px;
-    font-stretch: ultra-condensed;
 }
-
 .column2 {
     float: left;
     border-radius: 4px;
     box-shadow: 1px 1px 10px gray;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 60px;
+    margin: 60px;
     width: 400px;
     height: 234px;
     background-color: white;
 }
-
-.headline{
+.headline {
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
-
-.text{
-    color:black;
+.text {
+    color: black;
     font-size: 30px;
 }
-
-.quantity2{
+.quantity2 {
+    float: right;
     margin-top: -6px;
-    float:right;
-    text-align:center;
+    text-align: center;
     border-radius: 50%;
     color: darkblue;
     background-color: paleturquoise;
@@ -164,12 +140,11 @@ body {
     width: 25px;
     height: 25px;
 }
-
-.item{
-    height:20px;
+.item {
     float: left;
+    height: 20px;
     min-width: 90px;
-    text-align:left;
+    text-align: left;
     padding-top: 10px;
     margin-left: -15px;
     margin-right: 25px;
@@ -178,8 +153,5 @@ body {
     border-color: whitesmoke;
     border-radius: 6px;
     box-shadow: 0px 1px 1px lightgray;
-    float: left;
-    font-size: 12px;
+    font-size: 13px;
 }
-
-
