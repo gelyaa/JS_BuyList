@@ -153,7 +153,10 @@ body {
     box-shadow: 0px 1px 1px lightgray;
     font-size: 13px;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .badge {
     float: left;
     position: fixed;
@@ -203,9 +206,42 @@ body {
         border-color: darkblue;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 1100px) {
     .column2{
         width: 480px;
         margin-left: 50px;
     }
 }
+<<<<<<< Updated upstream
+=======
+button::after {
+    visibility: hidden;
+    position: absolute;
+    padding: 5px;
+    margin-top: -57px;
+    margin-left: -35px;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 8px;
+    background-color: rgba(82, 0, 204 ,0.7);
+    color: white;
+    font-size: 15px;
+    transition: all 1s ease;
+    text-align: center;
+    content: attr(data-tooltip);
+}
+.addbutton::after{
+    margin-top: -40px;
+    margin-left: -50px;
+}
+
+.boughtbutton::after{
+    margin-top: -42px;
+    margin-left: -55px;
+}
+		
+button:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
+>>>>>>> Stashed changes
