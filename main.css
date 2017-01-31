@@ -153,10 +153,7 @@ body {
     box-shadow: 0px 1px 1px lightgray;
     font-size: 13px;
 }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 .badge {
     float: left;
     position: fixed;
@@ -212,8 +209,7 @@ body {
         margin-left: 50px;
     }
 }
-<<<<<<< Updated upstream
-=======
+
 button::after {
     visibility: hidden;
     position: absolute;
@@ -244,4 +240,3 @@ button:hover::after {
 	opacity: 1;
 	visibility: visible;
 }
->>>>>>> Stashed changes
