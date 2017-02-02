@@ -6,7 +6,7 @@ body {
 }
 button{
     cursor: pointer;
-    box-shadow: 0px 1px 1px lightgray;
+    box-shadow: 0 1px 1px lightgray;
 }
 .container {
     width: 100%;
@@ -90,12 +90,12 @@ button{
     background-color: whitesmoke;
 }
 .right{
-   float: right;
-   width: 30%;
+    float: right;
+    width: 30%;
 }
 .right button{
-  float: right;
-  border-radius: 6px;
+    float: right;
+    border-radius: 6px;
 }
 .boughtbutton {
     background-color: whitesmoke;
@@ -105,6 +105,12 @@ button{
     margin-top: -20px;
     margin-right: 10px;
     font-size: 15px;
+}
+.notboughtbutton{
+    display: none;
+    width: 105px;
+    margin-top: -20px;
+    margin-left: -20px;
 }
 .cancelbutton {
     margin-top: -18px;
@@ -133,7 +139,7 @@ button{
     font-size: 30px;
 }
 .quantity2 {
-    margin: 0px 3px 0px 3px;
+    margin: 0 3px 0 3px;
     padding: 1px 7px 1px 7px;
     border-radius: 50%;
     color: darkblue;
@@ -146,11 +152,11 @@ button{
     margin-bottom: 5px;
     background-color: whitesmoke;
     border-radius: 3px;
-    box-shadow: 0px 1px 1px lightgray;
+    box-shadow: 0 1px 1px lightgray;
 }
-.item { 
-   margin-left: 5px;
-   font-weight: 600;
+.item {
+    margin-left: 5px;
+    font-weight: 600;
 }
 .badge {
     float: left;
@@ -165,7 +171,7 @@ button{
     padding: 23px;
     transition: all 1s ease;
 }
-.hover_content,author {
+.hover_content, .author {
     position: absolute;
     padding-top: 19px;
     display: none;
@@ -184,8 +190,8 @@ button{
     display: block;
 }
 @media print {
-     .column, .sec-column, .badge{
-         border: solid;
+    .column, .sec-column, .badge{
+        border: solid;
     }
     .badge_title{
         visibility: hidden;
@@ -233,14 +239,14 @@ button::after {
 .boughtbutton::after{
     margin-top: -42px;
     margin-left: -47px;
-}	
+}
 button:hover::after {
     transform: scale(1);
-	opacity: 1;
-	visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 button:hover{
-      box-shadow: none;
-      opacity: 0.7;
+    box-shadow: none;
+    opacity: 0.7;
 }
