@@ -88,13 +88,13 @@ function notBoughtMode(label){
 }
 
 function plus(node,label){
-   var quantity =  node.find('.quantity');
-   var num = parseInt(quantity.html());
-   quantity.fadeOut(function(){
-       quantity.text(1+num);
-   });
+    var quantity =  node.find('.quantity');
+    var num = parseInt(quantity.html());
+    quantity.fadeOut(function(){
+        quantity.text(1+num);
+    });
     quantity.fadeIn();
-   if(num==1) node.find('.minusbutton').attr("disabled", false);
+    if(num==1) node.find('.minusbutton').attr("disabled", false);
     label.find('.quantity2').text(num+1);
 }
 
@@ -106,7 +106,7 @@ function minus(button,node,label){
         quantity.text(num-1);
     });
     quantity.fadeIn();
-   label.find('.quantity2').text(num-1);
+    label.find('.quantity2').text(num-1);
 }
 
 function editMode(name,node,label){
@@ -123,5 +123,3 @@ function editMode(name,node,label){
         $(node).removeClass('edit-mode');
     });
 }
-
-
