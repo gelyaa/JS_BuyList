@@ -42,7 +42,7 @@ function addItem(title) {
     LIST_OF_LEFT_ITEMS.append(label);
     $(node).hide().slideDown("slow");
     $(label).hide().fadeIn();
-    $('.input').val("");
+    $('.input').val("").focus();
 
     node.find('.name').on('click', function () {
         var name = $(this);
@@ -88,7 +88,7 @@ function notBoughtMode(label){
 }
 
 function plus(node,label){
-    var quantity =  node.find('.quantity');
+    var quantity = node.find('.quantity');
     var num = parseInt(quantity.html());
     quantity.fadeOut(function(){
         quantity.text(1+num);
