@@ -5,6 +5,8 @@ body {
     font-family: serif;
 }
 input{
+    padding-right: 8px;
+    padding-left: 8px;
     border-radius: 3px;
     border: 1px solid lightgray;
 }
@@ -27,8 +29,9 @@ button{
     background-color: white;
 }
 .segment {
-    padding: 30px;
     border-bottom: 1px solid lightgray;
+    padding: 30px 30px 0 30px;
+    height: 30px;
 }
 .first {
     padding: 18px;
@@ -42,7 +45,7 @@ button{
     font-size: 15px;
 }
 .addbutton {
-    width:18%;
+    width:20%;
     background-color: midnightblue;
     border-color: midnightblue;
     color: white;
@@ -51,6 +54,10 @@ button{
     font-size: 15px;
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
+}
+.addbutton:hover{
+    background-color: #000150;
+    border-color: #000150;;
 }
 .line {
     background: white;
@@ -63,12 +70,6 @@ button{
     float: left;
     font-size: 17px;
 }
-.name-edit{
-    display: none;
-}
-.name-edit input{
-    padding: 2px;
-}
 .center{
     float: left;
     width: 30%;
@@ -76,27 +77,35 @@ button{
     margin-top: -18px;
     font-size: 15px;
     text-align: center;
+    padding-bottom: 10px;
 }
 .center button{
     font-size: 20px;
     width: 34px;
     height: 34px;
     color: white;
-    padding-bottom: 10px;
     border-radius: 50%;
 }
 .plusbutton {
     background-color: rgb(0, 230, 0);
     border-color: rgb(0, 230, 0);
 }
-.minusbutton {
-    background-color: rgba(285, 10, 0, 0.6);
-    border-color: rgba(285, 10, 0, 0.2);
+.plusbutton:hover{
+    background-color: rgb(20, 208, 37);
+    border-color: rgb(15, 208, 70);
+}
+.minusbutton, .cancelbutton {
+    background-color: #ff1801;
+    border-color: #ff1801;
+}
+.minusbutton:hover, .cancelbutton:hover{
+    background-color: #e50915;
+    border-color: #e50915;;
 }
 .quantity {
     margin-left: 3px;
     margin-right: 4px;
-    padding: 5px 8px 5px 10px;
+    padding: 5px 10px 5px 10px;
     background-color: whitesmoke;
 }
 .right{
@@ -107,7 +116,7 @@ button{
     float: right;
     border-radius: 6px;
 }
-.boughtbutton {
+.bought-not-bought {
     background-color: whitesmoke;
     border-color: whitesmoke;
     width: 85px;
@@ -121,13 +130,15 @@ button{
     width: 105px;
     margin-left: -20px;
 }
+.bought-not-bought:hover{
+    background-color: #e4e4e4;
+    border-color: #e4e4e4;
+}
 .cancelbutton {
     margin-top: -18px;
     margin-right: -20px;
     font-size: 20px;
     padding-bottom: 10px;
-    background-color: rgb(285, 10, 0);
-    border-color: red;
     color: white;
     width: 34px;
     height: 34px;
@@ -139,6 +150,7 @@ button{
 }
 .sec {
     padding: 15px;
+    height: auto;
 }
 .headline {
     padding: 10px;
@@ -155,17 +167,15 @@ button{
     background-color: paleturquoise;
     font-size: 16px;
 }
-.left-label{
+.label{
     display: inline-block;
     padding: 3px;
     margin-bottom: 5px;
     background-color: whitesmoke;
     border-radius: 3px;
     box-shadow: 0 1px 1px lightgray;
-}
-.item {
-    margin-left: 5px;
     font-weight: 600;
+    margin-left: 5px;
 }
 .badge {
     float: left;
@@ -245,17 +255,77 @@ button::after {
     margin-top: -40px;
     margin-left: -40px;
 }
-.boughtbutton::after{
+.bought-not-bought::after{
     margin-top: -42px;
     margin-left: -47px;
+}
+.notboughtbutton::after{
+    margin-left: -60px;
 }
 button:hover::after {
     transform: scale(1);
     opacity: 1;
     visibility: visible;
 }
-
 button:hover{
     box-shadow: none;
-    opacity: 0.7;
 }
+.hidden,.name-edit{
+    display: none;
+}
+
+.name-edit {
+    margin-top: -13px;
+    width: 33%;
+    float: left;
+    display: none;
+}
+.name-edit input{
+    width: 75%;
+    padding: 5px 8px;
+    font-size: 15px;
+}
+.edit-mode .name{
+    display: none;
+}
+.edit-mode .name-edit{
+    display: block;
+}
+button[disabled]{
+    background-color: rgba(285, 10, 0, 0.6);
+    border-color: rgba(285, 10, 0, 0.2);
+}
+button[disabled]:hover{
+    background-color: rgba(285, 10, 0, 0.6);
+    border-color: rgba(285, 10, 0, 0.2);
+}
+
+.bought-mode .cancelbutton{
+    display: none;
+}
+
+.bought-mode .boughtbutton{
+    display: none;
+}
+
+.bought-mode .center button{
+    visibility: hidden;
+}
+
+.bought-mode .name{
+    text-decoration: line-through;
+}
+
+.bought-mode .item{
+    text-decoration: line-through;
+}
+
+.bought-mode .quantity2{
+    text-decoration: line-through;
+}
+
+.bought-mode .notboughtbutton{
+    display: block;
+}
+
+

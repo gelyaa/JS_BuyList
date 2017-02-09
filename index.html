@@ -6,86 +6,22 @@
     <title>My Page</title>
 
 
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 
 <body>
 <div class="container">
 
     <div class="column">
-
-        <div class="segment first">
-            <div class="newproduct-line">
-                <input class="input" type="text" placeholder=" Name of the product">
-                <button class="addbutton" type="button" data-tooltip="Tooltip"> Add
-                </button>
-            </div>
-        </div>
-
-        <div class="segment">
-            <div class="line">
-                <span class="name"> Tomatoes </span>
-                <div class="input name name-edit">
-                <input type="text" placeholder="New name">
-            </div>
-                <div class="center">
-                    <button class="minusbutton" type="button" data-tooltip="Tooltip"> -
+        <div class="items-list">
+            <div class="segment first">
+                <div class="newproduct-line">
+                    <input class="input" type="text" placeholder="Name of the product">
+                    <button class="addbutton" type="button" data-tooltip="Tooltip"> Add
                     </button>
-                    <span class="quantity"> 1 </span>
-                    <button class="plusbutton" type="button" data-tooltip="Tooltip"> +
-                    </button>
-                </div>
-                <div class="right">
-                    <button class="cancelbutton" type="button" data-tooltip="Tooltip"> x
-                    </button>
-                    <button class="boughtbutton" type="button" data-tooltip="Tooltip"> Bought
-                    </button>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="segment">
-            <div class="line">
-                <span class="name"> Cookies </span>
-                <div class="input name name-edit">
-                    <input type="text" placeholder="New name">
-                </div>
-                <div class="center">
-                    <button class="minusbutton" type="button" data-tooltip="Tooltip"> -
-                    </button>
-                    <span class="quantity"> 1 </span>
-                    <button class="plusbutton" type="button" data-tooltip="Tooltip"> +
-                    </button>
-                </div>
-                <div class="right">
-                    <button class="cancelbutton" type="button" data-tooltip="Tooltip"> x </button>
-                    <button class="boughtbutton" type="button" data-tooltip="Tooltip"> Bought </button>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="segment">
-            <div class="line">
-                <span class="name"> Cheese </span>
-                <div class="input name name-edit">
-                    <input type="text" placeholder="New name">
-                </div>
-                <div class="center">
-                    <button class="minusbutton" type="button" data-tooltip="Tooltip"> - </button>
-                    <span class="quantity"> 1 </span>
-                    <button class="plusbutton" type="button" data-tooltip="Tooltip"> +
-                    </button>
-                </div>
-                <div class="right">
-                    <button class="cancelbutton" type="button" data-tooltip="Tooltip"> x </button>
-                    <button class="boughtbutton" type="button" data-tooltip="Tooltip"> Bought </button>
                 </div>
             </div>
         </div>
-
 
 
     </div>
@@ -97,28 +33,16 @@
         </div>
 
         <div class="segment sec">
-                <span class="left-label">
-                <span class="item"> Tomatoes
-                    <span class="quantity2"> 1 </span>
-                </span>
-                </span>
-            <span class="left-label">
-                <span class="item"> Cookies
-                    <span class="quantity2"> 1 </span>
-                </span>
-                </span>
-            <span class="left-label">
-                <span class="item"> Cheese
-                    <span class="quantity2"> 1 </span>
-                </span>
-                </span>
+            <div class="items-left"></div>
         </div>
 
         <div class="segment headline">
             <span class="text"> Bought </span>
         </div>
 
-        <div class="segment sec"></div>
+        <div class="segment sec">
+            <div class="items-bought"></div>
+        </div>
 
     </div>
 
@@ -132,6 +56,55 @@
 
 </div>
 
+
+<div class="hidden template-item ">
+    <div class="segment" >
+        <div class="line">
+            <span class="name">  </span>
+            <span class="input name-edit">
+                    <input class="input-edit" type="text" placeholder="New name">
+                </span>
+            <div class="center">
+                <button class="minusbutton" type="button" data-tooltip="Tooltip" disabled> -
+                </button>
+                <span class="quantity"> 1</span>
+                <button class="plusbutton" type="button" data-tooltip="Tooltip"> +
+                </button>
+            </div>
+            <div class="right">
+                <button class="cancelbutton" type="button" data-tooltip="Tooltip"> x
+                </button>
+                <button class="boughtbutton bought-not-bought" type="button" data-tooltip="Tooltip"> Bought
+                </button>
+                <button class="bought-not-bought notboughtbutton" type="button" data-tooltip="Tooltip"> Not Bought
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<span class="hidden template-label">
+    <span class="label">
+                <span class="item"> </span>
+                    <span class="quantity2"> 1 </span>
+                </span>
+                </span>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
