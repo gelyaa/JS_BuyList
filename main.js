@@ -90,10 +90,7 @@ function notBoughtMode(label){
 function plus(node,label){
     var quantity = node.find('.quantity');
     var num = parseInt(quantity.html());
-
-        quantity.text(1+num);
-
-
+    quantity.text(1+num);
     if(num==1) node.find('.minusbutton').attr("disabled", false);
     label.find('.quantity2').text(num+1);
 }
@@ -102,9 +99,7 @@ function minus(button,node,label){
     var quantity =  node.find('.quantity');
     var num = parseInt(quantity.html());
     if(num == 2)  $(button).attr("disabled", true);
-
-        quantity.text(num-1);
-
+    quantity.text(num-1);
     label.find('.quantity2').text(num-1);
 }
 
